@@ -1,0 +1,238 @@
+/*==GLOBAL CSS==*/
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto'
+}
+:root {
+  --Dark-moderate-blue: #487890;
+  --Light-grayish-blue: #bfd1db;
+  --black: black;
+  --Very-light-gray: #f9f9f9;
+  --Very-dark-grayish-blue: #34383b;
+  --transparent:transparent;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+video {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: var(--Light-grayish-blue);
+}
+a {
+  text-decoration: none;
+}
+h1{
+    font-size: 4vw;
+    text-align: center;
+    margin: 0;
+}
+ul {
+  list-style: none;
+}
+button{
+    font-size: 20px;
+    padding: 10px 20px;
+
+    border: 2px solid var(--transparent);
+}
+  
+/*==NAV BAR==*/
+header {
+  background-color: var(--Dark-moderate-blue);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  width: 100%;
+  height: fit-content;
+  position: fixed;
+}
+header h1 {
+  color: var(--Very-dark-grayish-blue);
+  margin: 0;
+  font-size: 1.5rem;
+}
+header h1 span {
+  color: var(--Very-light-gray);
+  font-size: 2.5rem;
+}
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+header nav ul li {
+  position: relative;
+  overflow: scroll;
+  padding: 7px 14px;
+}
+header nav ul li a {
+  color: var(--Very-light-gray);
+}
+header nav ul li::-webkit-scrollbar {
+  display: none;
+}
+header nav ul li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  height: 0%;
+  border-bottom: 2px solid var(--Very-light-gray);
+  border-right: 2px solid var(--Very-light-gray);
+}
+header nav ul li a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 0%;
+  border-top: 2px solid var(--Very-light-gray);
+  border-left: 2px solid var(--Very-light-gray);
+}
+header nav ul li a:hover::after {
+  animation: liste 0.3s ease;
+  width: 100%;
+  height: 100%;
+}
+
+header nav ul li a:hover::before {
+  animation: liste 0.3s ease;
+  width: 100%;
+  height: 100%;
+}
+/*==HOME==*/
+#home {
+  width: 100%;
+  height: 100%;
+  padding: 10rem 7rem 6rem 12rem;
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 70px;
+}
+
+#home #boximg img{
+    width: 34vw;
+    height: 50vh;
+}
+
+#home h1{
+    font-size: 4vw;
+}
+
+#home p{
+    
+    font-size: 2vw;
+    content: var(--Very-dark-grayish-blue);
+    line-height: 2.5rem;
+}
+#home button{
+    background-color: var(--Dark-moderate-blue);
+    color: var(--Very-light-gray);
+}
+#home h1 span{
+   color:var(--Very-dark-grayish-blue);
+}
+/*==ABOUT==*/
+#about{
+  width: 100%;
+    height: 100%;
+    padding: 12vh 0vw 55vh 0vw;
+  background-image: url(./laptop.jpeg);
+ background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+    text-align: center;}
+
+    #about p{
+          width: 50%;margin: 0 auto;
+          line-height: 2.4rem;
+          font-size: 1.2rem;
+          padding-top: 5vh;
+    }
+    /*==work==*/
+    #work{
+        width: 100%;
+        height: 100%;
+        padding: 5vh 0vw 5vh 0vw;
+        background-color: var(--Very-light-gray); 
+    }
+    /*==RESUME==*/
+    #resume {
+        width: 100%;height: 100%;
+
+    }
+    #resume #boximg{
+        margin: auto;
+        width: 40%;
+        height:70vh;               }
+        /*==CONTACT==*/
+        #contact{
+            width: 100%;
+            height: 100%;
+            padding: 8vh ;
+            background-color: var(--Very-light-gray); 
+   
+        }
+        #contact form{
+            width: 40%;
+            height: 100%;
+      margin: 6vh auto ;
+         background-color: var(--Dark-moderate-blue);
+padding:  4vh 7vw;
+         color: var(--Very-light-gray); 
+   
+        }
+        #contact form input,       #contact form textarea{
+            border-top: none;
+            border-right: none;border-left:none;
+         background-color: var(--transparent);
+            padding: 2vh ;
+            margin: 3vh;
+            border-bottom: 2px solid var(--Very-light-gray);
+        }
+
+        #contact form input::placeholder,       #contact form textarea::placeholder{
+
+         color: var(--Very-light-gray); 
+        }
+        /*==FOOTER==*/
+        footer {
+            width: 100%;
+            height: 100%;
+            padding: 2vh ;
+            text-align: center;
+        }
+/*==KEYFRAMES==*/
+@keyframes liste {
+  0% {
+    width: 0%;
+    height: 0;
+  }
+  50% {
+    width: 100%;
+    height: 0;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
