@@ -117,7 +117,7 @@ header nav ul li a:hover::before {
   height: 100%;
 }
 /*==HOME==*/
-.home {
+#home {
   width: 100%;
   height: 100%;
   padding: 10rem 7rem 6rem 12rem;
@@ -128,30 +128,30 @@ align-items: center;
 gap: 70px;
 }
 
-.home .boximg img{
+#home .boximg img{
     width: 34vw;
     height: 50vh;
 }
 
-.home h1{
+#home h1{
     font-size: 4vw;
 }
 
-.home p{
+#home p{
     
     font-size: 2vw;
     content: var(--Very-dark-grayish-blue);
     line-height: 2.5rem;
 }
-.home button{
+#home button{
     background-color: var(--Dark-moderate-blue);
     color: var(--Very-light-gray);
 }
-.home h1 span{
+#home h1 span{
    color:var(--Very-dark-grayish-blue);
 }
 /*==ABOUT==*/
-.about{
+#about{
   width: 100%;
     height: 100%;
     padding: 12vh 0vw 55vh 0vw;
@@ -162,37 +162,37 @@ gap: 70px;
   background-position: center;
     text-align: center;}
 
-    .about p{
+    #about p{
           width: 50%;margin: 0 auto;
           line-height: 2.4rem;
           font-size: 1.2rem;
           padding-top: 5vh;
     }
     /*==work==*/
-    .work{
+    #work{
         width: 100%;
         height: 100%;
         padding: 5vh 0vw 5vh 0vw;
         background-color: var(--Very-light-gray); 
     }
     /*==RESUME==*/
-    .resume {
+    #resume {
         width: 100%;height: 100%;
 
     }
-    .resume .boximg{
+    #resume .boximg{
         margin: auto;
         width: 40%;
         height:70vh;               }
         /*==CONTACT==*/
-        .contact{
+        #contact{
             width: 100%;
             height: 100%;
             padding: 8vh ;
             background-color: var(--Very-light-gray); 
    
         }
-        .contact form{
+        #contact form{
             width: 40%;
             height: 100%;
       margin: 6vh auto ;
@@ -201,7 +201,7 @@ padding:  4vh 7vw;
          color: var(--Very-light-gray); 
    
         }
-        .contact form input,       .contact form textarea{
+        #contact form input,       #contact form textarea{
             border-top: none;
             border-right: none;border-left:none;
          background-color: var(--transparent);
@@ -210,7 +210,7 @@ padding:  4vh 7vw;
             border-bottom: 2px solid var(--Very-light-gray);
         }
 
-        .contact form input::placeholder,       .contact form textarea::placeholder{
+        #contact form input::placeholder,       #contact form textarea::placeholder{
 
          color: var(--Very-light-gray); 
         }
